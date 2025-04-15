@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Templeproblem2 
+{
+
+	public static void main(String[] args) 
+	{
+		int lemoncount,newcount;
+		Scanner input= new Scanner(System.in);
+		System.out.print("Enter count of lemon:");
+		lemoncount=input.nextInt();
+		if(lemoncount==21)
+		{
+			System.out.println("You Have the sufficient number of lemons for god workship");
+		}
+		else if(lemoncount>=21)
+		{
+			newcount=lemoncount-21;
+			System.out.println("you Need "+newcount+" more lemons for workship");
+		}
+		else if(lemoncount<=21)
+		{
+			newcount=21-lemoncount;
+			System.out.println("you Have "+newcount+" less lemons for workship");
+		}
+		else
+		{
+			System.out.println("Invaild range");
+		}
+	}
+}
